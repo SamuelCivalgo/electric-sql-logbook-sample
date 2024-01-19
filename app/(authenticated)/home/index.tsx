@@ -12,7 +12,6 @@ const ProfileScreen = () => {
   const { connectivityState } = useConnectivityState()
 
   const allUsers = useFetchUsers()
-  console.log("🚀 ~ allUsers:", allUsers)
   const createRandomUser = useCreateRandomUser()
 
   const ref = React.useRef(null)

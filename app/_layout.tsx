@@ -1,6 +1,8 @@
 import '../polyfill/Intl'
 import 'dayjs/locale/en'
 import 'dayjs/locale/fr'
+import 'react-native-url-polyfill/auto'
+import 'react-native-get-random-values';
 
 import dayjs from 'dayjs'
 import advancedFormat from 'dayjs/plugin/advancedFormat'

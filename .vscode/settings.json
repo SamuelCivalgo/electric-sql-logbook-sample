@@ -65,7 +65,8 @@
     "typesafe",
     "upserted",
     "uuidv",
-    "watermelondb"
+    "watermelondb",
+    "yxxx"
   ],
   "i18n-ally.pathMatcher": "{locale}/texts.json",
   "i18n-ally.keystyle": "nested",
