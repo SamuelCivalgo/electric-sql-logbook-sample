@@ -1,0 +1,6 @@
+BEGIN;
+
+DROP SCHEMA IF EXISTS electric CASCADE;
+DROP PUBLICATION IF EXISTS electric_publication;
+
+COMMIT;

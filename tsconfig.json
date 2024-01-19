@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "module": "ESNext",
+    "experimentalDecorators": true,
+    "noUncheckedIndexedAccess": true,
+    "strict": true
+  },
+  "exclude": ["app.config.ts"],
+  "extends": "expo/tsconfig.base"
+}
