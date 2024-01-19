@@ -23,7 +23,6 @@ module.exports = function (api) {
       ],
       ['@babel/plugin-proposal-decorators', { legacy: true }],
       '@babel/plugin-proposal-export-namespace-from',
-      'expo-router/babel',
       'nativewind/babel',
       [
         'module-resolver',

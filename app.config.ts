@@ -21,15 +21,10 @@ export default {
     },
     jsEngine: 'hermes',
     android: {
+      package: 'com.civalgo.logbook_sample_electric',
       adaptiveIcon: {
         foregroundImage: './assets/adaptive-icon.png',
         backgroundColor: '#000000',
-      },
-      package: process.env.PACKAGE_NAME,
-      config: {
-        googleMaps: {
-          apiKey: process.env.GOOGLE_MAPS_API_KEY,
-        },
       },
     },
     locales: {
@@ -37,13 +32,9 @@ export default {
       en: './i18n/en/en.json',
     },
     ios: {
-      bundleIdentifier: process.env.IOS_BUNDLE_IDENTIFIER,
+      bundleIdentifier: 'com.civalgo.logbook_sample_electric',
       supportsTablet: false,
       usesAppleSignIn: true,
-      config: {
-        googleMapsApiKey: process.env.GOOGLE_MAPS_API_KEY,
-        usesNonExemptEncryption: false,
-      },
       infoPlist: {
         CFBundleAllowMixedLocalizations: true,
       },
@@ -100,26 +91,5 @@ export default {
       'expo-apple-authentication',
       'expo-router',
     ],
-    extra: {
-      router: {
-        origin: process.env.REACT_APP_GRAPHQL_URI,
-      },
-      eas: {
-        projectId: process.env.EAS_PROJECT_ID,
-      },
-    },
-    hooks: {
-      postPublish: [
-        {
-          file: 'sentry-expo/upload-sourcemaps',
-          config: {
-            organization: process.env.SENTRY_ORG,
-            project: process.env.SENTRY_PROJECT,
-            setCommits: process.env.SENTRY_SET_COMMITS,
-            release: process.env.SENTRY_RELEASE,
-          },
-        },
-      ],
-    },
   },
 }
